@@ -1,5 +1,7 @@
 FROM ruby:2.5.1
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs postgresql-client
+RUN apt-get update -qq
+RUN apt-get install -y build-essential apt-utils
+RUN apt-get install -y libpq-dev postgresql-client nodejs nodejs-legacy yarn
 ADD Gemfile Gemfile
 ADD Gemfile.lock Gemfile.lock
 RUN bundle install
