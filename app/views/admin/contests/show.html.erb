@@ -89,4 +89,5 @@
 
 <h2>
   <%= link_to 'view all submissions', admin_contest_submissions_path(contest_id: @contest.id) %>
+  <%= link_to 'view fastest submission', fastest_submission_admin_contest_submissions_path(contest_id: @contest.id) %>
 </h2>

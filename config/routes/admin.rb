@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :contests do
-      resources :submissions, :editorials
+      resources :editorials
+      resources :submissions do
+        collection do
+          get :fastest_submission
+        end
+      end
+
       member do
         get :json_upload
         patch :update_from_json
