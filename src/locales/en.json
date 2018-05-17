@@ -18,5 +18,6 @@
   "total_score": "Total Score",
   "judge_results": "Judge Results",
   "point": " point",
-  "close": "Close"
+  "close": "Close",
+  "remaining_time": "Remaining Time"
 }

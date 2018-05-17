@@ -19,5 +19,6 @@
   "total_score": "総合得点",
   "judge_results": "判定結果",
   "point": "点",
-  "close": "閉じる"
+  "close": "閉じる",
+  "remaining_time": "残り時間"
 }
