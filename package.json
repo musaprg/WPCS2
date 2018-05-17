@@ -24,7 +24,10 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": ["tslint --fix", "git add"]
+    "src/**/*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -57,6 +60,7 @@
   "dependencies": {
     "i18n-webpack-plugin": "^0.3.0",
     "marked": "^0.3.6",
+    "moment": "^2.22.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-render-html": "^0.1.6",
