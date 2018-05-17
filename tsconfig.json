@@ -8,7 +8,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "public/build",
-    "sourceMap": true
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "contests/*": ["src/constests/*"],
+      "locales/*": ["src/locales/*"],
+      "tutorial/*": ["src/tutorial/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": [".tscache", "node_modules"]
